@@ -34,10 +34,29 @@ an illusion, and sizing must reflect that.
   method); size to the real factor count, not the name count.
 - **Backlog / earnings** — order-backlog and earnings-reaction drift (needs a fundamentals feed).
 
-Nothing above is implemented or validated. This is the map, not the territory.
+## Research — first pass done
+
+Full detail in [`research/README.md`](research/README.md). The scorecard:
+
+| # | Question | Verdict |
+|---|----------|---------|
+| 1 | Where on the Basel↔Bio correlation spectrum? | ✅ **moderate factor** — corr 0.52, 58% one-factor, ~2.7 bets/8 |
+| 2a | Do geopolitical shocks give next-day drift? | ❌ priced instantly (corr +0.00) |
+| 2b | Does trend+vol-target help? | ❌ no — defense whipsaws (+0.75→+0.44) |
+| 2c | Is defense a risk-off hedge? | ❌ no — high-beta industrials (β 0.96, falls as much on worst days) |
+
+**The synthesis:** Bulk is a **null** for a systematic sleeve, with one useful diagnostic.
+Defense fills the *middle* of the family's correlation spectrum — **Bio 36% → Bulk 58% →
+Basel 81%** one-factor share — a moderate factor bound by a shared demand driver (defense
+budget/geopolitics) but kept distinct by program mix (~3 real bets, not 8). But none of the
+tradeable angles survive: geopolitical shocks are priced instantly (no drift, unlike
+crude→refiner), trend-following whipsaws, and defense is high-beta industrials (corr 0.74 /
+β 0.96 to SPY) that falls just as hard on the worst days — *not* a hedge. A fine buy&hold
+sector, no systematic alpha, no diversification.
 
 ## Status
-**Scaffold.** Engine wired as a submodule; strategy research not yet conducted.
+**Research: first pass complete — null (diagnostic only)** (`research/`). No systematic edge;
+defense is equity beta with a narrative. No live driver. Nothing validated to the spine's bar.
 
 ## The Blaque Baux family
 This repo is one sleeve of the **Blaque Baux** family — a single governed engine steered in
@@ -47,7 +66,7 @@ base/blueprint and holds the [full family roster](https://github.com/Carter-Warr
 ## Layout
 ```
 engine/     the Blaque Baux platform (git submodule → Carter-Warrens/blaquebaux)
-research/   Path-A strategy sketches (to come)
+research/   two Path-A sketches (correlation spectrum, tradeability null) + scorecard
 live/       governed live drivers (once a sleeve graduates to paper A/B)
 ```
 
