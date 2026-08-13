@@ -2,7 +2,7 @@
 
 **Defense and military — the primes, the suppliers, and the sector ETFs.**
 
-Bulk is a member of the Blaque Baux family. The [core repo](https://github.com/Carter-Warrens/blaquebaux)
+Bulk is a member of the Blaque Baux family. The [core repo](https://github.com/blaque-baux/base)
 is the **engine and blueprint**. Bulk points that engine at defense, aerospace, and
 military-adjacent names and ETFs — `ITA`, `XAR`, `PPA`, `DFEN`, and primes like `LMT`, `RTX`,
 `NOC`, `GD`, `LHX`. It inherits the engine's governance wholesale.
@@ -12,7 +12,7 @@ military-adjacent names and ETFs — `ITA`, `XAR`, `PPA`, `DFEN`, and primes lik
 > See [LICENSE](LICENSE).
 
 ```bash
-git clone --recursive https://github.com/Carter-Warrens/blaquebaux-bulk.git
+git clone --recursive https://github.com/blaque-baux/bulk.git
 julia --project=engine -e 'using Pkg; Pkg.instantiate()'   # one-time engine setup
 ```
 
@@ -72,12 +72,12 @@ honest research, reproducible evidence, and execution you can trust — is why C
 
 ## The Blaque Baux family
 This repo is one sleeve of the **Blaque Baux** family — a single governed engine steered in
-many directions. The [core repo](https://github.com/Carter-Warrens/blaquebaux) is the
-base/blueprint and holds the [full family roster](https://github.com/Carter-Warrens/blaquebaux#the-blaque-baux-family).
+many directions. The [core repo](https://github.com/blaque-baux/base) is the
+base/blueprint and holds the [full family roster](https://github.com/blaque-baux/base#the-blaque-baux-family).
 
 ## Layout
 ```
-engine/     the Blaque Baux platform (git submodule → Carter-Warrens/blaquebaux)
+engine/     the Blaque Baux platform (git submodule → blaque-baux/base)
 research/   two Path-A sketches (correlation spectrum, tradeability null) + scorecard
 live/       governed live drivers (once a sleeve graduates to paper A/B)
 ```
